@@ -35,8 +35,8 @@ class NavBar {
 
 const menu = new NavBar(
     '.btn-menu',
-    '.nav-lista',
-    '.nav-lista li'
+    '.links-menu',
+    '.links-menu li'
 )
 
 menu.init()
