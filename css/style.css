@@ -1,3 +1,11 @@
+:root {
+    --color1: #ffb100;
+    --color2: #ffc338;
+    --color3: #f63e02;
+    --color4: #aa2b00;
+    --color5: #1b0221;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,18 +16,16 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-
 header {
     position: relative;
-    background: #161320;
+    background: var(--color1);
     width: 100%;
-    padding-bottom: 15px;
+    padding: 10px;
 }
 
 header #area-logo {
-    /* background-color: #aa4949; */
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding: 5px;
 }
 
@@ -37,33 +43,57 @@ header #logo {
     transition: .3s;
 }
 
-.btn-menu {
-    margin: 0px;
-}
-
 .btn-menu.active .linha1 {
     transform: rotate(-45deg) translate(-8px, 8px);
 }
+
 .btn-menu.active .linha2 {
     opacity: 0;
 }
+
 .btn-menu.active .linha3 {
     transform: rotate(45deg) translate(-5px, -7px);
 }
 
 section.tela {
-    height: 100vh;
+    height: 85vh;
     width: 100%;
     padding: 15px;
-    border: 1px solid black;
-    /* text-overflow: break; */
 }
 
-a {
-    display: block;
-    width: 100px;
-    height: 100px;
-    background-color: #161320;
+section.tela h2 {
+    margin-bottom: 15px;
+    text-align: center;
+    color: var(--color4);
+}
+
+section.tela p {
+    margin-top: 5px;
+    line-height: 1.35rem;
+    font-size: 1.3rem;
+    text-align: justify;
+    text-indent: 2.5rem;
+}
+
+section.tela.eixos .caixas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80vw;
+    gap: 20px;
+    margin: auto;
+}
+
+section.tela.eixos .caixas a {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    width: 130px;
+    padding: 5px;
+    height: 130px;
+    background-color: var(--color2);
+    color: var(--color5);
     border-radius: 10px;
 }
 
@@ -72,6 +102,7 @@ a {
         opacity: 0;
         transform: translateX(50px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
