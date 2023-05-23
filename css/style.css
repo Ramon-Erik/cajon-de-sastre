@@ -21,6 +21,7 @@ header {
     background: var(--color1);
     width: 100%;
     padding: 10px;
+    text-align: center;
 }
 
 header #area-logo {
@@ -95,6 +96,20 @@ section.tela.eixos .caixas a {
     background-color: var(--color2);
     color: var(--color5);
     border-radius: 10px;
+    transition: all .3s ease;
+}
+
+section.tela.eixos .caixas a:hover {
+    background-color: var(--color1);
+    transform: scale(1.1);
+}
+
+footer {
+    display: flex;
+    padding: 5px;
+    background-color: var(--color5);
+    color: white;
+    font-size: .9rem;
 }
 
 @keyframes navLinkFade {
