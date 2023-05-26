@@ -15,3 +15,11 @@ section.tela h2 {
     text-align: center;
     color: #005685;
 }
+.menu{
+    text-decoration: none;
+    color: white;
+
+}
+.menu:hover{
+    color: red;
+}
