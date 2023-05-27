@@ -1,5 +1,5 @@
 header {
-    background: #0073b1;
+    background: rgb(133, 132, 132);
     color: white;
 }
 
@@ -13,14 +13,16 @@ section.tela {
 section.tela h2 {
     margin-bottom: 15px;
     text-align: center;
-    color: #005685;
+    color: rgb(46, 45, 45);
 }
 .menu{
     text-decoration: none;
     color: white;
 
 }
+
+
 .menu:hover{
-    color: red;
+    color: rgb(150, 7, 150);
     transition: 1s;
 }

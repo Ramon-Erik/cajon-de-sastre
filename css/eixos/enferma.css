@@ -22,4 +22,5 @@ section.tela h2 {
 }
 .menu:hover{
     color: red;
+    transition: 1s;
 }
