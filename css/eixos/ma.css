@@ -1,0 +1,28 @@
+header {
+    background: rgba(2, 131, 13, 0.909);
+    color: white;
+}
+
+section.tela {
+    height: fit-content;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 40px;
+}
+
+section.tela h2 {
+    margin-bottom: 15px;
+    text-align: center;
+    color: rgb(16, 17, 16);
+}
+.menu{
+    text-decoration: none;
+    color: white;
+
+}
+
+
+.menu:hover{
+    color: rgba(0, 0, 0, 0.909);
+    transition: 1s;
+}

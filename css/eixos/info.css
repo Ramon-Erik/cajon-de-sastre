@@ -29,6 +29,7 @@ section.tela h2 {
 
 }
 .menu:hover{
+<<<<<<< HEAD
     color:var(--color1);
 }
  .caixas {
@@ -61,3 +62,8 @@ section.tela h2 {
     transform: scale(1.1);
 }
 
+=======
+    color: red;
+    transition: 1s;
+}
+>>>>>>> a6fc5e1519a4d74b972e16768a0c3ce48d5fc176
