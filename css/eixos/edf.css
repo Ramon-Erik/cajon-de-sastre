@@ -1,3 +1,5 @@
+
+
 header {
     background: rgb(133, 132, 132);
     color: white;
@@ -18,24 +20,35 @@ section.tela h2 {
 .menu{
     text-decoration: none;
     color: white;
+    letter-spacing: 1px;
 
-}
+} 
+
+
 
 
 .menu:hover{
     color: rgb(150, 7, 150);
     transition: 1s;
+
 }
 
 .container{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     
+}
+
+.card:hover {
+  transform: scale(0.9);
 }
 
 
 .card {
+    cursor: pointer;
+    transition: all .7s;
     width: 300px;
     height: 460px;
     margin: 25px;
@@ -92,6 +105,8 @@ section.tela h2 {
     margin-top: 20px;
     text-align: center;
     background-color: #000;
+
+    
   }
 
   
