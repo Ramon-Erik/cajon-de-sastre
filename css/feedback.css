@@ -10,6 +10,7 @@ body {
 
 main {
     margin: 10vh auto;
+    width: fit-content;
     padding: 10px;
     border-radius: 10px;
 }
