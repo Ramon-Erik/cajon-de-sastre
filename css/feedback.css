@@ -1,14 +1,79 @@
+/* :root {
+  --color1: #ffb100;
+  --color2: #ffb338;
+  --color3: #f63f02;
+  --color4: #aa2b00;
+  --color5: #2b0221;
+} */
+
 body {
-  background: rgb(0, 22, 71);
-  background: linear-gradient(153deg,
-      #001b33 0%,
-      #2b0221 50%,
-      #2b0221 100%);
+  background: linear-gradient(to bottom,
+      var(--color1),
+      var(--color4));
 }
 
 main {
   margin: 10vh auto;
-  width: fit-content;
+  width: calc(100% - 20px);
   padding: 10px;
   border-radius: 10px;
+  background-color: white;
+}
+
+main h4 {
+  padding-bottom: 15px;
+  border-bottom: 1px solid black;
+}
+
+form div.linha {
+  margin: 10px 0;
+}
+
+form {
+  margin-top: 20px;
+}
+
+form input,
+form button,
+form textarea {
+  width: calc(100% - 10px);
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+form textarea {
+  resize: none;
+}
+
+form button.mandar {
+  padding: 10px;
+  background-color: var(--color2);
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+
+.linha {
+  position: relative;
+}
+
+.input-field {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.input-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: .9rem;
+  color: #999;
+  pointer-events: none;
+  transition: all 0.2s;
+}
+
+.input-field:focus+.input-label,
+.input-field:not(:placeholder-shown)+.input-label {
+  top: -15px;
+  font-size: .9rem;
+  color: #333;
 }

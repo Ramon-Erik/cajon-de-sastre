@@ -12,16 +12,23 @@
 
 <body>
     <main>
+        <h1>Venha nos dar seu feedback</h1>
+        <h4>Informe um erro em algum jogo, envie-nos o seu jogo, ou deixe uma menssagem!</h4>
         <form action="https://formsubmit.co/ramon.silva48@aluno.ce.gov.br" method="POST">
             <div class="linha">
-                <input type="text" name="name" required>
+                <input type="text" id="nome" class="input-field" pattern="[A-Za-zÀ-ÿ\s']+" title="Informe um nome valido, sem metacaraacteres. ex: Antônio Henzo" placeholder=" " name="name" required>
+                <label class="input-label" for="nome">Digite seu nome completo.</label>
             </div>
             <div class="linha">
-                <input type="email" name="email" required>
+                <input type="email" placeholder=" " class="input-field" id="email" name="email" required>
+                <label class="input-label" for="email">Informe um email para resposta.</label>
             </div>
-            <textarea placeholder="Your Message" name="message" rows="13" required></textarea></div>
             <div class="linha">
-                <button type="submit">Mandar</button>
+                <textarea placeholder=" " class="input-field" id="menssagem" name="message" rows="13" required></textarea>
+                <label class="input-label" for="menssagem">Seu feedback.</label>
+            </div>
+            <div class="linha">
+                <button class="mandar" type="submit">Mandar</button>
             </div>
         </form>
     </main>
