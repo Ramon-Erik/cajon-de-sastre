@@ -24,6 +24,16 @@ header {
     text-align: center;
 }
 
+a {
+    color: #000;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+
 header #area-logo {
     display: flex;
     justify-content: space-between;
