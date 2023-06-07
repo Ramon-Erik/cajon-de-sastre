@@ -7,17 +7,20 @@
 } */
 
 body {
-  background: linear-gradient(to bottom,
-      var(--color1),
-      var(--color4));
+  background: var(--color5);
 }
 
 main {
   margin: 10vh auto;
-  width: calc(100% - 20px);
+  width: calc(100% - 30px);
   padding: 10px;
   border-radius: 10px;
   background-color: white;
+}
+
+main h1,
+main h4 {
+  text-align: center;
 }
 
 main h4 {
@@ -26,7 +29,8 @@ main h4 {
 }
 
 form div.linha {
-  margin: 10px 0;
+  margin: 15px 0;
+  position: relative;
 }
 
 form {
@@ -37,7 +41,7 @@ form input,
 form button,
 form textarea {
   width: calc(100% - 10px);
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-family: inherit;
 }
 
@@ -50,30 +54,23 @@ form button.mandar {
   background-color: var(--color2);
   border: 1px solid transparent;
   border-radius: 10px;
-}
-
-.linha {
-  position: relative;
-}
-
-.input-field {
-  padding: 10px;
-  font-size: 16px;
+  cursor: pointer;
 }
 
 .input-label {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: .9rem;
-  color: #999;
-  pointer-events: none;
-  transition: all 0.2s;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all .5s ease;
+  font-size: 1.1rem;
 }
 
-.input-field:focus+.input-label,
+.input-field:not(:placeholder-shown) {
+  margin-top: 19px;
+}
+
 .input-field:not(:placeholder-shown)+.input-label {
-  top: -15px;
-  font-size: .9rem;
-  color: #333;
+  opacity: 1;
+  transform: translateY(-3px);
 }
