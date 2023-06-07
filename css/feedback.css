@@ -43,6 +43,7 @@ form textarea {
   width: calc(100% - 10px);
   font-size: 1.1rem;
   font-family: inherit;
+  transition: all .5s;
 }
 
 form textarea {
@@ -59,8 +60,8 @@ form button.mandar {
 
 .input-label {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 1px;
+  left: 1px;
   opacity: 0;
   transition: all .5s ease;
   font-size: 1.1rem;
@@ -71,6 +72,15 @@ form button.mandar {
 }
 
 .input-field:not(:placeholder-shown)+.input-label {
+  transform: translateY(-4px);
   opacity: 1;
-  transform: translateY(-3px);
+}
+
+@media screen and (min-width: 608px) {
+  main {
+      width: 500px;
+  }
+  footer {
+    gap: 40px;
+  }
 }
