@@ -57,14 +57,18 @@ header #logo {
 }
 
 section.tela {
-    height: 85vh;
+    height: 75vh;
     max-height: fit-content;
     width: 100%;
     padding: 15px;
 }
 
+section.tela.eixos {
+    height: 65vh;
+}
+
 section.tela h2 {
-    margin-bottom: 15px;
+    margin: 15px 0;
     text-align: center;
     color: var(--color4);
 }
@@ -83,7 +87,7 @@ section.tela.eixos .caixas {
     flex-wrap: wrap;
     width: 80vw;
     gap: 20px;
-    margin: auto;
+    margin: 25px auto;
 }
 
 section.tela.eixos .caixas a {
