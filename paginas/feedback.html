@@ -11,10 +11,12 @@
 </head>
 
 <body>
+    <a href="../index.html"> &#10094; voltar</a>
     <main>
         <h1>Venha nos dar seu feedback</h1>
         <h4>Informe um erro em algum jogo, envie-nos o seu jogo, ou deixe uma menssagem!</h4>
-        <form action="https://formsubmit.co/ramon.silva48@aluno.ce.gov.br" method="POST">
+        <form action="https://formsubmit.co/ramon.silva48@aluno.ce.gov.br" method="POST" enctype="multipart/form-data">
+            <input type="hidden" name="_cc" value="maria.cavalcante19@prof.ce.gov.br">
             <div class="linha">
                 <input type="text" id="nome" class="input-field" pattern="[A-Za-zÀ-ÿ\s']"
                 title="Informe um nome valido, sem metacaraacteres. ex: Antônio Henzo" placeholder="Insira seu nome" name="name" required>
@@ -27,6 +29,10 @@
             <div class="linha">
                 <textarea placeholder="Coloque aqui sua menssagem" class="input-field" id="menssagem" name="message" rows="13" required></textarea>
                 <label class="input-label" for="menssagem">Coloque aqui sua menssagem</label>
+            </div>
+            <div class="linha">
+                <label for="anexo">Envie fotos, caso necessário...</label>
+                <input type="file" id="anexo" name="attachment" accept="image/png, image/jpeg">
             </div>
             <div class="linha">
                 <button class="mandar" type="submit">Mandar</button>

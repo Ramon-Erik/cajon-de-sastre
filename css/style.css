@@ -4,6 +4,7 @@
     --color3: #f63f02;
     --color4: #aa2b00;
     --color5: #2b0221;
+    --color-texto-ouro: #994a00;
 }
 
 * {
@@ -57,8 +58,7 @@ header #logo {
 }
 
 section.tela {
-    height: 75vh;
-    max-height: fit-content;
+    min-height: 75vh;
     width: 100%;
     padding: 15px;
 }
@@ -112,19 +112,19 @@ section.tela.eixos .caixas a:hover {
 }
 
 /* feedback */
-
 section.feedback .caixa-link {
     display: block;
     position: relative;
     width: 150px;
     height: 100px;
     margin: 20px auto;
-    background-color: #ffb100;
+    background-color: var(--color1);
     border-radius: 10px;
-    color: white;
+    color: var(--color-texto-ouro);
     font-size: large;
     font-weight: bold;
     text-decoration: none;
+    overflow: hidden;
 }
 
 section.feedback .caixa-link span {
@@ -136,6 +136,23 @@ section.feedback .caixa-link span {
     transform: translate(-50%, -50%);
 }
 
+section.feedback .caixa-link::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 20px;
+    height: 150px;
+    background-color: #f3f3f3;
+    box-shadow: 0 0 10px #fff;
+    filter: blur(1px);
+    opacity: .9;
+    transition: .7s;
+    transform: rotate(20deg) translateX(-60px);
+    animation: brilhar 7s ease infinite alternate;
+    animation-delay: 3s;
+}
+
 footer {
     display: flex;
     justify-content: center;
@@ -144,6 +161,15 @@ footer {
     background-color: var(--color5);
     color: white;
     font-size: .9rem;
+}
+
+@keyframes brilhar {
+    0%, 100%{
+        left: -10px;
+    }
+    50% {
+        left: 190%;
+    }
 }
 
 @keyframes navLinkFade {
