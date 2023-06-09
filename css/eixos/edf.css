@@ -38,8 +38,11 @@ section.tela h2 {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+   grid-template-columns: repeat(auto-fit, 300px);
     
 }
+
+
 
 .card:hover {
   transform: scale(0.9);
@@ -49,8 +52,8 @@ section.tela h2 {
 .card {
     cursor: pointer;
     transition: all .7s;
-    width: 300px;
-    height: 460px;
+    width: 200px;
+    height: 300px;
     margin: 25px;
     background-color: #fff;
     border-radius: 20px;
@@ -64,7 +67,7 @@ section.tela h2 {
   /* Card Header*/
   .card-header {
     width: 100%;
-    height: 200px;
+    height: 100px;
     overflow: hidden;
   }
   
@@ -76,7 +79,7 @@ section.tela h2 {
   
   /* Card Body */
   .card-body {
-    height: 170px;
+    height: 120px;
     padding: 15px;
     text-align: center;
     font-family: sans-serif;
@@ -102,7 +105,7 @@ section.tela h2 {
   
   /* Card Footer */
   .card-footer {
-    margin-top: 20px;
+    margin-top: 12px;
     text-align: center;
     background-color: #000;
 
@@ -114,10 +117,10 @@ section.tela h2 {
   .card-footer a {
     color: #fff;
     display: block;
-    padding: 26px;
+    padding: 29px;
     text-decoration: none;
     font-family: sans-serif;
-    font-weight: 600;
+    font-weight: 300;
   }
   
   /* Cores Cards */
