@@ -13,6 +13,7 @@ body {
 body a {
   color: white;
   text-decoration: none;
+  margin-left: 10px;
 }
 
 main {
@@ -49,6 +50,7 @@ form textarea {
   font-size: 1.1rem;
   font-family: inherit;
   transition: all .5s;
+  margin-left: 5px;
 }
 
 form textarea {
@@ -66,7 +68,7 @@ form button.mandar {
 .input-label {
   position: absolute;
   top: 1px;
-  left: 1px;
+  left: 6px;
   opacity: 0;
   transition: all .5s ease;
   font-size: 1.1rem;
