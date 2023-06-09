@@ -183,3 +183,18 @@ footer {
         transform: translateX(0);
     }
 }
+
+@media screen and (min-width: 708px) {
+    main {
+        width: 650px;
+        margin: auto;
+    }
+
+    section.tela.eixos .caixas {
+        width: 400px;
+    }
+
+    section.tela.eixos .caixas a {
+        margin-bottom: 20px;
+    }
+}
