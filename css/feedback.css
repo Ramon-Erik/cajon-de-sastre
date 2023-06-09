@@ -1,0 +1,93 @@
+/* :root {
+  --color1: #ffb100;
+  --color2: #ffb338;
+  --color3: #f63f02;
+  --color4: #aa2b00;
+  --color5: #2b0221;
+} */
+
+body {
+  background: var(--color5);
+}
+
+body a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+main {
+  margin: 10vh auto;
+  width: calc(100% - 30px);
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+main h1,
+main h4 {
+  text-align: center;
+}
+
+main h4 {
+  padding-bottom: 15px;
+  border-bottom: 1px solid black;
+}
+
+form div.linha {
+  margin: 15px 0;
+  position: relative;
+}
+
+form {
+  margin-top: 20px;
+}
+
+form input,
+form button,
+form textarea {
+  width: calc(100% - 10px);
+  font-size: 1.1rem;
+  font-family: inherit;
+  transition: all .5s;
+  margin-left: 5px;
+}
+
+form textarea {
+  resize: none;
+}
+
+form button.mandar {
+  padding: 10px;
+  background-color: var(--color2);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.input-label {
+  position: absolute;
+  top: 1px;
+  left: 6px;
+  opacity: 0;
+  transition: all .5s ease;
+  font-size: 1.1rem;
+}
+
+.input-field:not(:placeholder-shown) {
+  margin-top: 19px;
+}
+
+.input-field:not(:placeholder-shown)+.input-label {
+  transform: translateY(-4px);
+  opacity: 1;
+}
+
+@media screen and (min-width: 608px) {
+  main {
+      width: 500px;
+  }
+  footer {
+    gap: 40px;
+  }
+}
