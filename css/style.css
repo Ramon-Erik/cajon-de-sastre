@@ -64,7 +64,7 @@ section.tela {
 }
 
 section.tela.eixos {
-    height: 65vh;
+    min-height: 65vh;
 }
 
 section.tela h2 {
@@ -108,7 +108,6 @@ section.tela.eixos .caixas a {
 
 section.tela.eixos .caixas a:hover {
     background-color: var(--color1);
-    transform: scale(1.1);
 }
 
 /* feedback */
