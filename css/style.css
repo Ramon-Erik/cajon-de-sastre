@@ -58,31 +58,46 @@ header #logo {
 }
 
 ul.links-menu {
+    position: absolute;
+    top: -60vh;
+    right: 0;
+    opacity: 0;
+    
     width: 200px;
-    height: fit-content;
     display: flex;
-    background-color: var(--color4);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color3);
+
+    transition: all 2s;
+}
+
+ul.links-menu.ativado {
+    top: 40%;
+    opacity: 1;
+}
+
+.btn-menu.ativado {
+    background-color: var(--color3);
 }
 
 ul.links-menu li {
     list-style: none;
-    display: inline-block;
+    padding: 15px 0;
+    border-bottom: 2px solid white;
+    width: 100%;
     position: relative;
-    background-color: aqua;
+}
+
+ul.links-menu li:nth-last-child(1) {
+    border: none;
 }
 
 ul.links-menu a {
     color: #fff;
     text-decoration: none;
 }
-
-ul.links-menu a::before {
-    content: '\01F517';
-    position: absolute;
-    left: -19px;
-    /* z-index: 4; */
-}
-
 
 section.tela {
     min-height: 75vh;
