@@ -57,6 +57,33 @@ header #logo {
     transform: rotate(45deg) translate(-5px, -7px);
 }
 
+ul.links-menu {
+    width: 200px;
+    height: fit-content;
+    display: flex;
+    background-color: var(--color4);
+}
+
+ul.links-menu li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    background-color: aqua;
+}
+
+ul.links-menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul.links-menu a::before {
+    content: '\01F517';
+    position: absolute;
+    left: -19px;
+    /* z-index: 4; */
+}
+
+
 section.tela {
     min-height: 75vh;
     width: 100%;
