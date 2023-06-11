@@ -37,6 +37,10 @@ header #logo {
     background-color: #fff;
 }
 
+.btn-menu {
+    position: relative;
+}
+
 .btn-menu div {
     width: 32px;
     height: 2px;
@@ -45,36 +49,27 @@ header #logo {
     transition: .3s;
 }
 
-.btn-menu.active .linha1 {
-    transform: rotate(-45deg) translate(-8px, 8px);
-}
-
-.btn-menu.active .linha2 {
-    opacity: 0;
-}
-
-.btn-menu.active .linha3 {
-    transform: rotate(45deg) translate(-5px, -7px);
-}
-
 ul.links-menu {
     position: absolute;
-    top: -60vh;
+    bottom: 140%;
     right: 0;
-    opacity: 0;
-    
-    width: 200px;
+
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+
+    width: 200px;
+    height: fit-content;
+    
     background-color: var(--color3);
 
     transition: all 2s;
 }
 
 ul.links-menu.ativado {
-    top: 40%;
+    bottom: 0;
+    transform: translateY(100%);
     opacity: 1;
 }
 
