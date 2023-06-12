@@ -102,14 +102,15 @@ ul.links-menu {
 
 ul.links-menu.ativado {
     top: 58px;
-    /* right: 20px; */
-    /* transform: translateY(100%); */
     opacity: 1;
 }
 
 .btn-menu.ativado {
     top: 20px;
     right: 20px;
+}
+
+.btn-menu.scroll {
     background-color: var(--color3);
 }
 
