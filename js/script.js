@@ -1,29 +1,19 @@
 const menu = document.querySelector('.links-menu')
 const menuBtn = document.querySelector('.btn-menu')
+const fade = document.querySelector('.fade')
 
-function mostraMenu() {
+function mostrarMenu() {
     if (menu.classList.contains('ativado')) {
-        tiraMenu()
+        tirarMenu()
     } else {
         menu.classList.add('ativado')
         menuBtn.classList.add('ativado')
+        fade.classList.add('ativado')
     }
 }
 
-function tiraMenu() {
+function tirarMenu() {
     menu.classList.remove('ativado')
     menuBtn.classList.remove('ativado')
-    // document.addEventListener('click', () => {
-    //     if (menu.classList.contains('ativado')) {
-    //         tiraMenu()
-    //     }
-    // }
-    // )
+    fade.classList.remove('ativado')
 }
-
-// menu.addEventListener('click', (e) => {
-//     if (!menu.contains(e.target)) {
-//         mostraMenu()
-//     }
-// }
-// )
