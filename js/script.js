@@ -29,7 +29,6 @@ function tirarMenu() {
 document.addEventListener('scroll', () => {
     const verticalPosition = scrollT()
     
-    console.log(verticalPosition)
     if (verticalPosition >= 113) {
         menuBtn.classList.add('scroll')
     } else {

@@ -262,6 +262,18 @@ footer a {
     }
 }
 
+
+@media screen and (max-height: 520px) {
+    ul.links-menu {
+        top: -100vh;
+    }
+}
+
+@media screen and (max-height: 220px) {
+    ul.links-menu {
+        top: -290vh;
+    }
+}
 @media screen and (min-width: 375px) {
     footer a {
         position: relative;
