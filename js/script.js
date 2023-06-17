@@ -32,6 +32,8 @@ document.addEventListener('scroll', () => {
     if (verticalPosition >= 113) {
         menuBtn.classList.add('scroll')
     } else {
-        menuBtn.classList.remove('scroll')
+        if (!menu.classList.contains('ativado')) {
+            menuBtn.classList.remove('scroll')
+        }
     }
 })
