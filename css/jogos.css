@@ -2,7 +2,22 @@ body {
     background: white;
 }
 
-
 main {
     margin-top: 0;
+}
+
+.card {
+    display: flex;
+    width: 125px;
+    height: 200px;
+    background-color: aliceblue;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.card .card-corpo {
+    width: 100%;
+    height: calc(100% - 30px);
+    background-color: aquamarine;
 }
