@@ -6,8 +6,13 @@ main {
     margin-top: 0;
 }
 
+section.tela {
+    min-height: fit-content;
+}
+
 .card {
     display: flex;
+    flex-direction: column;
     width: 125px;
     height: 200px;
     background-color: aliceblue;
@@ -20,4 +25,16 @@ main {
     width: 100%;
     height: calc(100% - 30px);
     background-color: aquamarine;
+}
+
+.card .card-rodape {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .card-rodape p {
+    text-indent: 0;
 }
