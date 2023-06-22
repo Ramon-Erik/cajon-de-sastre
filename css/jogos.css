@@ -18,7 +18,11 @@ section.tela {
     background-color: aliceblue;
     border: none;
     cursor: pointer;
-    
+    transition: all .5s ease;
+}
+
+.card:hover {
+    transform: scale(.9);
 }
 
 .card .card-corpo {
