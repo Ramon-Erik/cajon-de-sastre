@@ -1,4 +1,8 @@
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
     background: white;
 }
 
@@ -41,4 +45,11 @@ section.tela {
 
 .card .card-rodape p {
     text-indent: 0;
+}
+
+@media screen and (min-width: 708px) {
+    .card {
+        width: 180px;
+        /* margin: 10px; */
+    }
 }
