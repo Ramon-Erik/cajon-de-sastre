@@ -2,14 +2,14 @@ const menu = document.querySelector('.links-menu')
 const menuBtn = document.querySelector('.btn-menu')
 const fade = document.querySelector('.fade')
 
-function scrollT() {
+function scrollT() { //retornar a posição da tela (scrollY)
     return document.documentElement.scrollTop
 }
 
-function mostrarMenu() {
-    if (menu.classList.contains('ativado')) {
+function mostrarMenu() { // menu mostrado ao clicar na div .btn-menu
+    if (menu.classList.contains('ativado')) { //tirar menu caso ele ja esteja visivel
         tirarMenu()
-    } else {
+    } else { // adicionar menu estilos para menu ativo
         menu.classList.add('ativado')
         menuBtn.classList.add('ativado')
         menuBtn.classList.add('scroll')
@@ -17,7 +17,7 @@ function mostrarMenu() {
     }
 }
 
-function tirarMenu() {
+function tirarMenu() { // acionado também ao clicar no fade
     menu.classList.remove('ativado')
     menuBtn.classList.remove('ativado')
     if (scrollT() < 113) {
@@ -26,7 +26,7 @@ function tirarMenu() {
     fade.classList.remove('ativado')
 }
 
-document.addEventListener('scroll', () => {
+document.addEventListener('scroll', () => { //deixar o menu vsivel na tela branca
     const verticalPosition = scrollT()
     
     if (verticalPosition >= 113) {
