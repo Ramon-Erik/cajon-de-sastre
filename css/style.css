@@ -302,6 +302,14 @@ footer a {
         margin: auto;
     }
 
+    section.tela {
+        min-height: fit-content;
+    }
+    
+    section.tela.jogos {
+        min-height:40vh;
+    }
+
     section.tela.jogos .caixas {
         width: 400px;
     }
