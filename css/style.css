@@ -139,7 +139,7 @@ section.tela {
     padding: 15px;
 }
 
-section.tela.eixos {
+section.tela.jogos {
     min-height: 65vh;
 }
 
@@ -157,7 +157,7 @@ section.tela p {
     text-indent: 2.5rem;
 }
 
-section.tela.eixos .caixas {
+section.tela.jogos .caixas {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -166,7 +166,7 @@ section.tela.eixos .caixas {
     margin: 25px auto;
 }
 
-section.tela.eixos .caixas a {
+section.tela.jogos .caixas a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -182,7 +182,7 @@ section.tela.eixos .caixas a {
     transition: all .3s ease;
 }
 
-section.tela.eixos .caixas a:hover {
+section.tela.jogos .caixas a:hover {
     background-color: var(--color1);
 }
 
@@ -260,7 +260,6 @@ footer a {
 
 
 @keyframes brilhar {
-
     0%,
     100% {
         left: -10px;
@@ -270,19 +269,6 @@ footer a {
         left: 190%;
     }
 }
-
-@keyframes navLinkFade {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
 
 @media screen and (max-height: 520px) {
     ul.links-menu {
@@ -316,11 +302,11 @@ footer a {
         margin: auto;
     }
 
-    section.tela.eixos .caixas {
+    section.tela.jogos .caixas {
         width: 400px;
     }
 
-    section.tela.eixos .caixas a {
+    section.tela.jogos .caixas a {
         margin-bottom: 20px;
     }
 }
