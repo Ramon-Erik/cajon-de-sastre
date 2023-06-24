@@ -21,6 +21,8 @@ section.tela {
     height: 200px;
     background-color: aliceblue;
     border: none;
+    overflow: hidden;
+    border-radius: 9px;
     cursor: pointer;
     transition: all .5s ease;
 }
