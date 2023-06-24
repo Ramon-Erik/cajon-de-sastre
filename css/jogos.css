@@ -14,10 +14,14 @@ section.tela {
     min-height: fit-content;
 }
 
+.caixas {
+    gap: 10px !important;
+}
+
 .card {
     display: flex;
     flex-direction: column;
-    width: 125px;
+    width: 142px;
     height: 200px;
     background-color: aliceblue;
     border: none;
@@ -34,7 +38,7 @@ section.tela {
 .card .card-corpo {
     width: 100%;
     height: calc(100% - 30px);
-    background-color: aquamarine;
+    background-color: var(--color2);
 }
 
 .card .card-rodape {
@@ -47,6 +51,35 @@ section.tela {
 
 .card .card-rodape p {
     text-indent: 0;
+    font-size: .99rem;
+}
+
+.card .card-corpo.j-mem {
+    background-image: url('../img/jogos/j-mem.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.card .card-corpo.j-pa {
+    background-image: url('../img/jogos/j-pa.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.card .card-corpo.j-li {
+    background-image: url('../img/jogos/j-li.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.card .card-corpo.j-hso {
+    background-image: url('../img/jogos/j-hso.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 @media screen and (min-width: 708px) {
