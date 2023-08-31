@@ -184,6 +184,31 @@ section.tela.eixos .caixas a:hover {
     background-color: var(--color1);
 }
 
+.eixo-hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.caixas :nth-child(2) {
+    transition-delay: 700ms;
+}
+
+.caixas :nth-child(3) {
+    transition-delay: 1000ms;
+}
+
+.caixas :nth-child(4) {
+    transition-delay: 1300ms;
+}
+
+.shown {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 1s;
+}
+
 /* feedback */
 section.feedback .caixa-link {
     display: block;

@@ -37,3 +37,20 @@ document.addEventListener('scroll', () => {
         }
     }
 })
+
+const observador = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('shown')
+        } else {
+            entry.target.classList.remove('shown')
+        }
+        console.log(entry)
+    })
+})
+
+const elementoEscondido = document.querySelectorAll('.eixo-hidden')
+
+elementoEscondido.forEach(el => {
+    observador.observe(el)
+});
