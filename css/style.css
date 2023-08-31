@@ -112,6 +112,7 @@ ul.links-menu.ativado {
 
 .btn-menu.scroll {
     background-color: var(--color3);
+    border-radius: 5px;
 }
 
 ul.links-menu li {
@@ -190,16 +191,19 @@ section.tela.eixos .caixas a:hover {
     transition: all 1s;
 }
 
-.caixas :nth-child(2) {
+.tela .caixas a :nth-child(2) {
     transition-delay: 700ms;
+    background-color: #2b0221;
 }
 
 .caixas :nth-child(3) {
     transition-delay: 1000ms;
+    background-color: #a16792;
 }
 
 .caixas :nth-child(4) {
     transition-delay: 1300ms;
+    background-color: #780058;
 }
 
 .shown {
